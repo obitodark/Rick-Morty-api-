@@ -57,7 +57,7 @@ const DataModal = ({ open, setOpen }) => {
             height: { xs: "100%", sm: "270px" },
           }}
         >
-          <Grid container sx={{ position: "relative" }}>
+          <Grid container sx={{ position: "relative" }} justifyContent="center">
             <Card
               sx={{
                 display: { xs: "block", sm: " flex" },
@@ -124,10 +124,11 @@ const DataModal = ({ open, setOpen }) => {
                 position: "absolute",
                 borderRadius: "50%",
                 bottom: "-50px",
-                left: "105%",
+                right: "-740px",
                 width: "700px",
                 height: "700px",
                 background: "#1C1F37",
+                zIndex: -1,
                 boxShadow:
                   dataCharacterById.status === "Dead"
                     ? " 0 0 0 10px #ff2d7544, 0 0 200px #ff2d75, 0 0 00px #ff2d75"
